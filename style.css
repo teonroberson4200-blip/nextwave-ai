@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Neon glow effects */
+.glow-cyan {
+  text-shadow: 0 0 20px #22d3ee;
+}
+
+.glow-purple {
+  text-shadow: 0 0 20px #c026d3;
+}
+
+/* Video overlay fix */
+video {
+  filter: brightness(1.1) contrast(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
